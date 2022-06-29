@@ -12,7 +12,7 @@ class F implements Fighter {
   levelUp(): void { }
   special(enemy: Fighter): void { }
   attack(enemy: Fighter): void { }
-  receiveDamage(amount: number): void { }
+  receiveDamage(amount: number): number { return 0; }
 }
 const b = new B(new F());
 
